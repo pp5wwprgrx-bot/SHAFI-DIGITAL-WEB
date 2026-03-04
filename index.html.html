@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shafi Digital Solutions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+    margin: 0;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #111827;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.navbar a:hover {
+    color: #22c55e;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 20px;
+    color: #cbd5e1;
+}
+
+.btn {
+    margin-top: 30px;
+    padding: 12px 25px;
+    background-color: #22c55e;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #16a34a;
+}
+
+/* SERVICES */
+.services {
+    background-color: #1e293b;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.service-box {
+    width: 300px;
+    padding: 20px;
+    background-color: #334155;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+}
+
+/* CONTACT */
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+}
+ @media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .navbar div:last-child {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div><strong>Shafi Digital</strong></div>
+        <div>
+            <a href="#">Home</a>
+            <a href="#Services">Services</a>
+            <a href="#Contact">contact</a>
+    </div>
+
+    <!-- HERO -->
+    <div class="hero">
+        <h1>Shafi Digital Solutions</h1>
+        <p>I build modern websites for local businesses in UAE.</p>
+        <a href="#" class="btn">Contact Me</a>
+    </div>
+
+    <!-- SERVICES -->
+    <div class="services">
+        <h2>My Services</h2>
+
+        <div class="services-container">
+            <div class="service-box">
+                <h3>Business Website Design</h3>
+                <p>Modern websites for restaurants, salons and shops.</p>
+            </div>
+
+            <div class="service-box">
+                <h3>Google Business Setup</h3>
+                <p>Helping businesses appear on Google search & maps.</p>
+            </div>
+
+            <div class="service-box">
+                <h3>Website Maintenance</h3>
+                <p>Monthly updates and full support.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="contact">
+        <h2>Contact Me</h2>
+        <p>📞 +971-564663842</p>
+<p>📧 shafidigital@gmail.com</p>
+
+<a href="https://wa.me/971564663842" class="btn" target="_blank">
+    Chat on WhatsApp
+</a>
+
+    </div>
+
+</body>
+</html>
