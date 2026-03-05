@@ -1,178 +1,237 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Shafi Digital Solutions</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        html {
-    scroll-behavior: smooth;
-}
+<title>Shafi Digital Solution</title>
 
-body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #0f172a, #1e293b);
-    color: white;
-    margin: 0;
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:linear-gradient(135deg,#020617,#0f172a,#020617);
+color:white;
 }
 
 /* NAVBAR */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    background-color: #111827;
+
+nav{
+display:flex;
+justify-content:space-between;
+padding:20px 60px;
+background:#020617;
 }
 
-.navbar a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
+nav h2{
+color:#38bdf8;
 }
 
-.navbar a:hover {
-    color: #22c55e;
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
 }
 
 /* HERO */
-.hero {
-    text-align: center;
-    padding: 100px 20px;
+
+.hero{
+padding:120px 60px;
+background:url("images/banner.jpg") center/cover no-repeat;
+text-align:center;
 }
 
-h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
+.hero h1{
+font-size:50px;
 }
 
-p {
-    font-size: 20px;
-    color: #cbd5e1;
+.hero span{
+color:#38bdf8;
 }
 
-.btn {
-    margin-top: 30px;
-    padding: 12px 25px;
-    background-color: #22c55e;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 8px;
-    display: inline-block;
+.hero p{
+color:#e2e8f0;
 }
 
-.btn:hover {
-    background-color: #16a34a;
+.btn{
+display:inline-block;
+margin-top:20px;
+background:#38bdf8;
+padding:12px 25px;
+border-radius:6px;
+color:black;
+text-decoration:none;
+font-weight:bold;
 }
 
 /* SERVICES */
-.services {
-    background-color: #1e293b;
-    padding: 60px 20px;
-    text-align: center;
+
+.services{
+padding:80px 60px;
+background:#020617;
 }
 
-.services-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 40px;
+.services h2{
+text-align:center;
+margin-bottom:40px;
 }
 
-.service-box {
-    width: 300px;
-    padding: 20px;
-    background-color: #334155;
-    border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
-    transition: transform 0.3s ease;
+.cards{
+display:flex;
+flex-wrap:wrap;
+gap:30px;
+justify-content:center;
 }
 
-.service-box:hover {
-    transform: translateY(-10px);
+.card{
+background:#0f172a;
+padding:25px;
+width:260px;
+border-radius:10px;
+border:1px solid #1e293b;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+/* PROJECTS */
+
+.projects{
+padding:80px 60px;
+}
+
+.project{
+background:#020617;
+padding:25px;
+margin:20px auto;
+max-width:500px;
+border-radius:10px;
+text-align:center;
+}
+
+.project a{
+color:#38bdf8;
+text-decoration:none;
 }
 
 /* CONTACT */
-.contact {
-    padding: 60px 20px;
-    text-align: center;
+
+.contact{
+padding:80px 60px;
+background:#020617;
+text-align:center;
 }
- @media (max-width: 768px) {
 
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-
-    .navbar div:last-child {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .services-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
+footer{
+background:black;
+padding:20px;
+text-align:center;
 }
-    </style>
+
+</style>
+
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
-    <div class="navbar">
-        <div><strong>Shafi Digital</strong></div>
-        <div>
-            <a href="#">Home</a>
-            <a href="#Services">Services</a>
-            <a href="#Contact">contact</a>
-    </div>
+<nav>
 
-    <!-- HERO -->
-    <div class="hero">
-        <h1>Shafi Digital Solutions</h1>
-        <p>I build modern websites for local businesses in UAE.</p>
-        <a href="#" class="btn">Contact Me</a>
-    </div>
+<h2>Shafi Digital</h2>
 
-    <!-- SERVICES -->
-    <div class="services">
-        <h2>My Services</h2>
+<div>
+<a href="#">Home</a>
+<a href="#">Services</a>
+<a href="#">Projects</a>
+<a href="#">Contact</a>
+</div>
 
-        <div class="services-container">
-            <div class="service-box">
-                <h3>Business Website Design</h3>
-                <p>Modern websites for restaurants, salons and shops.</p>
-            </div>
+</nav>
 
-            <div class="service-box">
-                <h3>Google Business Setup</h3>
-                <p>Helping businesses appear on Google search & maps.</p>
-            </div>
+<section class="hero">
 
-            <div class="service-box">
-                <h3>Website Maintenance</h3>
-                <p>Monthly updates and full support.</p>
-            </div>
-        </div>
-    </div>
+<h1>Hi, I'm <span>Shafi</span></h1>
 
-    <!-- CONTACT -->
-    <div class="contact">
-        <h2>Contact Me</h2>
-        <p>📞 +971-564663842</p>
-<p>📧 shafidigital@gmail.com</p>
+<p>Freelance Web Developer & Digital Creator</p>
 
-<a href="https://wa.me/971564663842" class="btn" target="_blank">
-    Chat on WhatsApp
+<p>I build modern websites and digital solutions for businesses.</p>
+
+<a class="btn">Hire Me</a>
+
+</section>
+
+<section class="services">
+
+<h2>My Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Website Design</h3>
+<p>Modern responsive websites for businesses.</p>
+</div>
+
+<div class="card">
+<h3>Business Websites</h3>
+<p>Professional company and portfolio websites.</p>
+</div>
+
+<div class="card">
+<h3>E-commerce</h3>
+<p>Online stores for selling products.</p>
+</div>
+
+<div class="card">
+<h3>Digital Solutions</h3>
+<p>Automation and digital tools for businesses.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="projects">
+
+<h2 style="text-align:center">My Projects</h2>
+
+<div class="project">
+
+<h3>Femmora Craft Website</h3>
+
+<p>Custom handmade gift store website.</p>
+
+<p>
+Visit Project:<br>
+<a href="https://pp5wwprgrx-bot.github.io/femmora-web/" target="_blank">
+Open Femmora Website
 </a>
+</p>
 
-    </div>
+</div>
+
+</section>
+
+<section class="contact">
+
+<h2>Let's Work Together</h2>
+
+<p>If you need a website for your business, contact me.</p>
+<p>WhatsApp: +971564663842<p>
+    
+
+<a class="btn">Contact Me</a>
+
+</section>
+
+<footer>
+
+© 2026 Shafi Digital Solution
+
+</footer>
 
 </body>
+
 </html>
