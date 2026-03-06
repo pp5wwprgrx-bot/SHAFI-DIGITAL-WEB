@@ -1,135 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Shafi Digital Solution</title>
+<title>Shafi Digital Solutions</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
 
 body{
 margin:0;
 font-family:Arial;
-background:linear-gradient(135deg,#020617,#0f172a,#020617);
+background:#0f172a;
 color:white;
 }
 
 /* NAVBAR */
 
-nav{
+.navbar{
 display:flex;
 justify-content:space-between;
+align-items:center;
 padding:20px 60px;
 background:#020617;
+position:sticky;
+top:0;
+z-index:1000;
 }
 
-nav h2{
-color:#38bdf8;
-}
-
-nav a{
+.navbar a{
 color:white;
 text-decoration:none;
-margin-left:25px;
+margin-left:20px;
+font-size:16px;
+}
+
+.navbar a:hover{
+color:#3b82f6;
 }
 
 /* HERO */
 
 .hero{
-padding:120px 60px;
-background:url("images/banner.jpg") center/cover no-repeat;
 text-align:center;
+padding:80px 20px;
+background:linear-gradient(135deg,#1e293b,#0f172a);
+}
+
+.hero img{
+width:100%;
+max-height:400px;
+object-fit:cover;
+border-radius:10px;
 }
 
 .hero h1{
-font-size:50px;
-}
-
-.hero span{
-color:#38bdf8;
+font-size:48px;
+margin-top:30px;
 }
 
 .hero p{
-color:#e2e8f0;
+font-size:20px;
+color:#cbd5f5;
 }
 
 .btn{
 display:inline-block;
-margin-top:20px;
-background:#38bdf8;
-padding:12px 25px;
-border-radius:6px;
-color:black;
+margin-top:25px;
+padding:12px 30px;
+background:#3b82f6;
+color:white;
 text-decoration:none;
-font-weight:bold;
+border-radius:6px;
 }
 
 /* SERVICES */
 
 .services{
-padding:80px 60px;
-background:#020617;
-}
-
-.services h2{
+padding:80px 20px;
 text-align:center;
-margin-bottom:40px;
 }
 
-.cards{
+.services-container{
 display:flex;
-flex-wrap:wrap;
-gap:30px;
 justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+margin-top:40px;
 }
 
-.card{
-background:#0f172a;
-padding:25px;
-width:260px;
+.service-box{
+background:#1e293b;
+padding:30px;
 border-radius:10px;
-border:1px solid #1e293b;
+width:250px;
 transition:0.3s;
 }
 
-.card:hover{
-transform:translateY(-8px);
+.service-box:hover{
+transform:translateY(-10px);
+background:#334155;
 }
 
 /* PROJECTS */
 
 .projects{
-padding:80px 60px;
-}
-
-.project{
 background:#020617;
-padding:25px;
-margin:20px auto;
-max-width:500px;
-border-radius:10px;
+padding:80px 20px;
 text-align:center;
-}
-
-.project a{
-color:#38bdf8;
-text-decoration:none;
 }
 
 /* CONTACT */
 
 .contact{
-padding:80px 60px;
-background:#020617;
+padding:80px 20px;
 text-align:center;
 }
 
-footer{
-background:black;
-padding:20px;
-text-align:center;
+/* WHATSAPP BUTTON */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 18px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+.whatsapp:hover{
+background:#20b954;
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+.navbar{
+flex-direction:column;
+}
+
+.services-container{
+flex-direction:column;
+align-items:center;
+}
+
 }
 
 </style>
@@ -138,100 +157,96 @@ text-align:center;
 
 <body>
 
-<nav>
+<!-- NAVBAR -->
+
+<div class="navbar">
 
 <h2>Shafi Digital</h2>
 
 <div>
 <a href="#">Home</a>
-<a href="#">Services</a>
-<a href="#">Projects</a>
-<a href="#">Contact</a>
+<a href="#services">Services</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
 </div>
 
-</nav>
+</div>
 
-<section class="hero">
+<!-- HERO -->
 
-<h1>Hi, I'm <span>Shafi</span></h1>
+<div class="hero">
 
-<p>Freelance Web Developer & Digital Creator</p>
+<img src="images/banner.jpg">
 
-<p>I build modern websites and digital solutions for businesses.</p>
+<h1>Modern Websites for Businesses</h1>
 
-<a class="btn">Hire Me</a>
+<p>I build professional websites for businesses in UAE</p>
 
-</section>
+<a class="btn" href="#services">View My Services</a>
 
-<section class="services">
+</div>
+
+<!-- SERVICES -->
+
+<div id="services" class="services">
 
 <h2>My Services</h2>
 
-<div class="cards">
+<div class="services-container">
 
-<div class="card">
-<h3>Website Design</h3>
-<p>Modern responsive websites for businesses.</p>
-</div>
-
-<div class="card">
+<div class="service-box">
 <h3>Business Websites</h3>
-<p>Professional company and portfolio websites.</p>
+<p>Professional websites for local businesses.</p>
 </div>
 
-<div class="card">
-<h3>E-commerce</h3>
-<p>Online stores for selling products.</p>
+<div class="service-box">
+<h3>Portfolio Websites</h3>
+<p>Modern personal portfolio websites.</p>
 </div>
 
-<div class="card">
-<h3>Digital Solutions</h3>
-<p>Automation and digital tools for businesses.</p>
+<div class="service-box">
+<h3>Online Stores</h3>
+<p>Sell your products online with custom websites.</p>
 </div>
 
 </div>
 
-</section>
+</div>
 
-<section class="projects">
+<!-- PROJECTS -->
 
-<h2 style="text-align:center">My Projects</h2>
+<div id="projects" class="projects">
 
-<div class="project">
+<h2>My Projects</h2>
 
-<h3>Femmora Craft Website</h3>
+<p>Femmora Crafts – Handmade Gift Website</p>
 
-<p>Custom handmade gift store website.</p>
-
-<p>
-Visit Project:<br>
-<a href="https://pp5wwprgrx-bot.github.io/femmora-web/" target="_blank">
-Open Femmora Website
+<a class="btn" href="https://pp5wwprgrx-bot.github.io/femmora-web/" target="_blank">
+View Live Website
 </a>
-</p>
 
 </div>
 
-</section>
+<!-- CONTACT -->
 
-<section class="contact">
+<div id="contact" class="contact">
 
-<h2>Let's Work Together</h2>
+<h2>Contact Me</h2>
 
-<p>If you need a website for your business, contact me.</p>
-<p>WhatsApp: +971564663842<p>
-    
+<p>📧 Email: shafirehmanwork12@gmail.com</p>
 
-<a class="btn">Contact Me</a>
+<p>📞 WhatsApp: +971 56 466 3842</p>
 
-</section>
+<p>📍 Location: Dubai, UAE</p>
 
-<footer>
+</div>
 
-© 2026 Shafi Digital Solution
+<!-- WHATSAPP FLOATING BUTTON -->
 
-</footer>
+<a class="whatsapp" href="https://wa.me/971564663842" target="_blank">
+Chat on WhatsApp
+</a>
 
 </body>
-
 </html>
+
